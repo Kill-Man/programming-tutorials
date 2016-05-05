@@ -1,0 +1,29 @@
+<!--This is the HTML document that we will use to show examples of CSS syntax-->
+<!--In the HTML tutorial file (indexNoCSS.html), you will see that there are
+	three types of CSS, inline, which belongs to a single tag, and all decendant
+    tags, embedded, which is CSS in a document, but not belonging to any tag in
+    particular, and external, which is CSS in a separate document. Inline and
+    embedded CSS was used in indexNoCSS.html, this document will show you how
+    to use external CSS.-->
+<!DOCTYPE HTML>
+<html>
+  <head>
+	<title>CSS Tutorial</title>
+	<link rel="stylesheet" href="index.css"> <!--How we will link this document to the CSS document.-->
+  </head>
+
+  <body>
+	<p>All paragraphs will have white text and a gray background unless they are edited.</p>
+	
+	<div id="identify"> <!--You can use ids to change the style of everything in a block.-->
+	  <h1>This is part of an id.</h1>
+	  <h1>And so is this.</h1>
+	</div>
+	<p class="class">This is part of a class.</p> <!--classes work like ids, but unlike ids, the can be applied as many times as you want.-->
+	<!--NEVER start and id or class name with a number.-->
+	<div id="decendant">
+	  <p class="selectors"><em>This</em> is the only word that will be changed.</p>
+	</div>
+	<p class="mono">This is in a monospace font.</p>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+/* CSS is used to change the look and feel of a web page. */
+/* Making comments in CSS is the same as multiline comments in C like languages. Comments are always multiline. */
+/* Style elements are called style rules, which are read by the web browser. Style rules have three parts: selector, property, and value. */
+p { /* This is the selector. It tells the browser what to change, in this case, anything with a <p> (paragraph) tag. Anything in between the {} affects the selector. */
+	color:white; /* color is the property, it is what is changed, and white is the property value. color changes the text color of whatever is selected. This is called a declaration block. */
+	background-color:gray; /* backgroud-color changes the background color of the text, not the text itself and not the background of the webpage. */
+	font-size:130%; /* font-size changes the size of the font, in this case, by percent, making it 130% the size of the default. */
+} /* Notice that all declaration blocks are sepparated by semicolons, and the property and value is separated by a colon. */
+
+/* The rule of inheritance says that if a child tag is edited, it takes precident over a parent tag being edited, so if a <p> is used in an id, the p styles overrule the id styling. */
+#identify { /* You can reference to ids by putting an octothorpe (#) in front of the name of the id. Everything in that block will be changed accordingly. */
+	color:#0000FF; /* You can use hex instead of color names when using colors. */
+	font-size:80%;
+}
+.class { /* To select a class, put a period (.) in front of the class name. */
+	color:blue;
+	background-color:black;
+}
+#decendant .selectors em { /* This will look for the <em> tag in the selectors class in the decendant id and style accordingly. */
+	color:yellow;
+	background-color:black;
+}
+.mono {
+	font-family:Monospace; /* font-family changes the font family. */
+}

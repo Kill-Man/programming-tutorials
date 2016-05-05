@@ -1,0 +1,160 @@
+<!DOCTYPE html> <!--this says that the document is an HTML document-->
+<html> <!--this says that html code starts here. HTML is the foundation of a website. CSS is the decoration. JavaScript is the interactivity.-->
+  <head> <!--this is the head. It lets you change the meta and what shows up in the tab-->
+	<title>
+	  Madness ensues
+	</title> <!--This is an end tag. It is simply ending the tag that is after the "/"--> <!--this is the title. It is the text in the tab-->
+	
+	<style> <!--This is Embedded CSS. You can also link to external stylesheets by doing this: <link rel="stylesheet" href="where the stylesheet is located">.-->
+	  p {
+	  color:white;
+	  background-color:black;
+	  }
+	</style>
+  </head>
+  <body bgcolor="#777777"> <!--This is the body. It is what is on the site. The 'bgcolor="#777777"' is saying that the body will be gray, because the numbers are RRGGBB in hexidecimal.-->
+	<center> <!--The center tag centers everything in it. It isn't recommended to use, as it is outdated. It will only be used if there are no other ways to center something using only HTML-->
+	  <input id="mysearch" name="searchitem" type="search" placeholder="Search" autofocus />
+	</center>
+	
+	<center>
+	  <header> <!--This is the header. It is basically the title of the page.-->
+		<img src="../files/Photos/Kill Man Color 2.0.jpg" height="320px" width="240" border="3px" /> <!--This creates an image and looks in the given folder-->
+	  </header>
+	</center>
+	
+	<div id="top"> <!--This is the div tag. It is useful in CSS, as you can edit any div by puting "#(id)".-->
+	  <h1 align="center" class="intro">It makes <em>me</em> <a href="http://i0.kym-cdn.com/photos/images/original/001/008/184/cb1.png" target="_blank"><b><i>MAD</i></b></a>!</h1> <!--h1 is heading 1. There are 6 headings. The <a> tag is the anchor tag. It is used to link to other pages, the page it is linking to is the href tag.-->
+	</div>
+	
+	<center>
+	  <video controls autoplay loop> <!--This is the video tag. It is used to play video. controls, autoplay, and loop, are all options, all of them obvious what they do.-->
+		<source src="../files/Video/freekekles.webm" type="video/webm"> <!--Multiple sources means that it will test all the sources until one works.-->
+		  <source src="../files/Video/LOOK AT ALL THEM SELFIES.webm" type="video/webm">
+			Video is not supported by your browser, <a href="https://www.google.com/intl/en/chrome/browser/desktop/index.html#" target="_blank">Chrome</a> or <a href="https://www.mozilla.org/en-US/firefox/new/?utm_source=google&utm_medium=paidsearch&utm_campaign=sem2015Q4&utm_content=brand" target="_blank">Firefox</a> is recommended.
+	  </video>
+	</center>
+	
+	<center>
+	  <form action="#" method="POST" name="user"> <!--A <form> tag lets something be submitted. action is where it is sent (# means nowhere), method is how, and the name is for reference.-->
+		<label for="email">Your e-mail: </label> <!--The label is the text next to an entry zone.-->
+		<input type="text" name="e-mail" placeholder="email@example.com" required /><br /> <!--The input type is what is submitted. Placeholder is text in a blank box.-->
+		<label for="username">Your username: </label>
+		<input type="text" name="username" placeholder="Username" /><br /> <!--The input type is what is submitted.-->
+		<label for="password">Your password: </label>
+		<input type="password" name="password" placeholder="Password" /><br /> <!--The password input type hides all characters inputted.-->
+		<input type="radio" name="gender" value="Male">Male<br /> <!--The radio type is like A, B, C, or D. You may only choose one of the choices.-->
+		<input type="radio" name="gender" value="Female">Puny Female<br />
+		<input type="submit" value="Submit"> <!--The submit value creates a button that submits information when clicked. The value is what the button says.-->
+	  </form>
+	</center>
+	
+	<p align="center">
+	  Does Dan suck?
+	</p>
+	
+	<center>
+	  <form action="#" method="POST" name="idiotquiz">
+		<input type="checkbox" name="Dan" value="Yes">Yes<br /> <!--The checkbox is like radio, but allows you to select more than one answer.-->
+		<input type="checkbox" name="Dan" value="Very Yes">Very Yes<br />
+		<input type="checkbox" name="Dan" value="I'm an idiot">I'm an idiot<br />
+		<input type="submit" value="I'm a bozo">
+	  </form>
+	</center>
+	
+	<p align="justify" style="color:white;background-color:blue;">What the jiminy crickets did you just flaming say about me, you little bozo? I'll have you know I graduated top of my class in the Cub Scouts, and I've been involved in numerous secret camping trips in Wyoming, and I have over 300 confirmed knots. I am trained in first aid and I'm the top bandager in the entire US Boy Scouts (of America). You are nothing to me but just another friendly face. I will clean your wounds for you with precision the likes of which has never been seen before on this annual trip, mark my words. You think you can get away with saying those shenanigans to me over the Internet? Think again, finkle. As we speak I am contacting my secret network of MSN friends across the USA and your IP is being traced right now so you better prepare for the seminars, man. The storm that wipes out the pathetic little thing you call your bake sale. You're frigging done, kid. I can be anywhere, anytime, and I can tie knots in over seven hundred ways, and that's just with my bare hands. Not only am I extensively trained in road safety, but I have access to the entire manual of the United States Boy Scouts (of America) and I will use it to its full extent to train your miserable butt on the facts of the continents, you little schmuck. If only you could have known what unholy retribution your little "clever" comment was about to bring down upon you, maybe you would have held your silly tongue. But you couldn't, you didn't, and now you're paying the price, you goshdarned sillyhead. I will throw leaves all over you and you will dance in them. You're friggin done, kiddo.</p> <!--Style is inline CSS. It can be used in the body and in the tag <body>.-->
+	
+	<p align="center">You're an idiot.</p> <!--This  is a paragraph. It is a section of text. Paragraphs are devided by unfilled lines.-->
+	
+	<p align="center"><b>Kill Man can read this easily.</b></p>
+	
+	<p align="center"><big>Kill Man thinks this text is too big.</big></p>
+	
+	<p align="center"><i>Kill man bent this text.</i></p>
+	
+	<p align="center"><em>Kill Man puts emphasis on this text.</em></p>
+	
+	<p align="center">Haha, a LoL peasent--><sub>I am filthy LoL peasant.</sub></p>
+	
+	<p align="center">Get down from there!<sup>No.</sup></p>
+	
+	<p align="center"><ins>Kill man likes this text.</ins></p>
+	
+	<p align="center"><del>Kill Man doesn't like this text.</del></p>
+	
+	<p align="center"><b><big><i><ins><del>KILL MAN LIKES THEM ALL!</del></ins></i></big></b></p>
+		
+	<center>
+	  <img src="/home/austin/Dropbox/Coding_Files/Files_Used/Photos/200mad.jpg" />
+	</center>
+	
+	<p align="center">
+	  More <a href="http://i2.kym-cdn.com/photos/images/original/000/969/648/6a0.gif" target="_blank">MAD</a>!
+	</p>
+	
+	<hr width="100px" /> <!--The <hr> tag creates a horizontal line, that goes almost all the way across if you don't specify width.-->
+	
+	<a href="http://lolzergrush.ytmnd.com/" target="_blank"><p align="center">Not mad, <br />but close enough.</p></a> <!--<br /> puts all text after it on a line below the text before-->
+	
+	<ol> <!--This is an ordered list. It starts with one and goes from there.-->
+	  <li>Mad 1</li> <!--This is a list item. It puts whatever is in it in the list-->
+	  <li>Mad 2</li>
+	  <li>Mad 3</li>
+	  
+	  <p>Mad Mixup</p><!--You can put a paragraph or header in a list, but it will not show as a list item-->
+	  
+	  <li value=7>Mad 7</li> <!--If there is a value in a list item the list will continue with whatever the value is.-->
+	  <li>Mad 8</li>
+	</ol>
+	
+	<ul> <!--This is an unordered list. It puts all list items next to bullet points instead of numbers.-->
+	  <li>Mad</li>
+	  <li>Mad</li>
+	  <li>Mad</li>
+	</ul>
+		
+	<table border=2 align="center"> <!--The <table> tag creates a table. The border is how thick the borders are.-->
+	  <tr> <!--The <tr> tag creates a table row. It needs to be created before any columns-->
+		<td bgcolor="red">Red</td> <!--The <td> tag creates a column inside a row. 'bgcolor="red"' makes the column (not the text) red.-->
+		<td>Blue</td>
+		<td>Green</td>
+	  </tr>
+	  
+	  <tr>
+		<td>White</td>
+		<td colspan=2>Pink</td> <!--"colspan=2" makes the column take up two column spaces.-->
+	  </tr>
+	</table>
+	
+	<center>
+	  <article> <!--This is an article. It is a place for important information or blogging.-->
+		<h1>The article - Kill Man</h1>
+		
+		<section> <!--This is a section. It is, simply put, a section of an article or website.-->
+		  <h1>You Suck</h1>
+		  
+		  <p>And that's a fact.</p>
+		  
+		  <aside>Dream of Kill Man everyone.</aside> <!--This is aside. It holds secondary information.-->
+		</section>
+	  </article>
+	</center>
+	
+	<center>
+	  <footer> <!--This is a footer. It can contain things such as copyright.-->
+		<p>"Go away" - Kill Man</p>
+	  </footer>
+	</center>
+	
+	<center>
+	  <p>Virus Download Progress: <progress min="0" max="100" value="37"></progress></p> <!--This is the progress bar. It is useful for FTP and other things, other than that, useless.-->
+	</center>
+	
+	<center>
+	  <audio controls autoplay loop> <!--This is an audio tag. The regular tag is just <audio controls>, but autoplay and loop has been added in this case, which is self explanitory.-->
+		<source src="/home/austin/Dropbox/Coding_Files/Files_Used/Audio/mr krabs.mp3" type="audio/mpeg" />
+			Audio is not supported by your browser, <a href="https://www.google.com/intl/en/chrome/browser/desktop/index.html#" target="_blank">Chrome</a> or <a href="https://www.mozilla.org/en-US/firefox/new/?utm_source=google&utm_medium=paidsearch&utm_campaign=sem2015Q4&utm_content=brand" target="_blank">Firefox</a> is recommended.
+	  </audio>
+	</center>
+  </body>
+</html>
