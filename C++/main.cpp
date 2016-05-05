@@ -41,7 +41,7 @@ using namespace std; //Next Multi
  * namespace for commands is the standard library (what std stands for).
  */
 
-const string name = "Austin"; //This is like define, but it has a datatype.
+const string name = "Kill Man"; //This is like define, but it has a datatype.
 //You can use const to create global objects as well.
 //When using const objects, you can only use const methods with that object.
 //A const variable must be defined on declaration
