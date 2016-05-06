@@ -32,6 +32,8 @@
  */
 
 #include "oop.h" //Holds informaiton for the oop class
+
+#include "tempClass.h" //Holds information for the tempClass class
  
 #define PI 3.1415926 //This makes a variable have a permanant value.
 
@@ -630,6 +632,20 @@ time: " << rand() << endl;
     //should print the myClass version of saySomething.
 
     oopP->pureVirtual();
+
+    int temInt = 4, temInt2 = 3;
+    cout << "temInt (4) + temInt2 (3) = " << temFun(temInt, temInt2) << endl;
+    double temDoub = 6.73, temDoub2 = 4.56;
+    cout << "temDoub (6.73) + temDoub2 (4.56) = " << temFun(temDoub, temDoub2) << endl;
+
+    int a = 6;
+    double b = 3.59;
+    tempClass<int, double> templateClass(a, b); //When you pass arguments to a class' constructor,
+    //you must specify the datatype passed in angle brackets after the class type.
+    templateClass.bigger();
+
+    char letterK = 'K';
+    tempClass<char> charClass(letterK);
 	
     return 0; //Next multi
 	/*
