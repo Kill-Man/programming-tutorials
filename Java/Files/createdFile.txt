@@ -1,0 +1,2 @@
+This is a file created by Java.
+It uses the format method in the Formatter class to write to a file created by the Formatter class.

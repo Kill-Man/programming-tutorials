@@ -1,4 +1,4 @@
-#include "oop.h"
+#include "oop.hpp"
 #include <iostream>
 using namespace std;
 void oop::oopPrint()
@@ -6,27 +6,27 @@ void oop::oopPrint()
     cout << "This is from another class." << endl;
 }
 
-void oop::protectedPrint()
-{
-	cout << "This is from a protected access modifier." << endl;
-}
-
-void oop::oop()
-{
-	cout << "This is the constructor for oop." << endl;
-}
-
-void oop::~oop()
-{
-	cout << "This is the deconstructor for oop." << endl;
-}
-
 void oop::setValue(int a)
 {
     value = a;
 }
 
-void oop::saySomething()
+void oop::saySomething() //If you declare a virtual function that isn't pure, you must define it.
 {
-    cout << "This is printed from the oop." << endl;
+    cout << "This is the default for a virtual function that isn't pure.";
+}
+
+void oop::protectedPrint()
+{
+    cout << "This is the default protectedPrint" << endl;
+}
+
+oop::oop()
+{
+	cout << "This is the constructor for oop." << endl;
+}
+
+oop::~oop()
+{
+	cout << "This is the deconstructor for oop." << endl;
 }

@@ -1,4 +1,4 @@
-#include "class.h"
+#include "class.hpp"
 #include <iostream>
 using namespace std;
 
@@ -42,13 +42,6 @@ void friendFun(myClass &obj, int val)
 	cout << "regVar now equals " << obj.regVar << endl;
 }
 
-myClass myClass::operator+(myClass &obj) //This makes it to where when you use the + operator on an object, it will execute this code on it.
-{ //This will just add the oper variable in the classes added and pushes that value to the object that is being defined.
-	myClass res;
-	res.oper = this->oper + obj.oper;
-	return res;
-}
-
 void myClass::printValue()
 {
     cout << "value = " << value << endl;
@@ -63,4 +56,16 @@ void myClass::saySomething()
 void myClass::pureVirtual()
 {
     cout << "This is printed from a pure virtual function." << endl;
+}
+
+myClass myClass::operator+(myClass &obj) //This makes it to where when you use the + operator on an object, it will execute this code on it.
+{ //This will just add the oper variable in the classes added and pushes that value to the object that is being defined.
+    myClass res;
+    res.oper = this->oper + obj.oper;
+    return res;
+}
+
+void myClass::printProtectedPrint()
+{
+    protectedPrint();
 }
