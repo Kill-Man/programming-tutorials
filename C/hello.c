@@ -92,7 +92,7 @@ int main() //The main function is the starting point of a C program. The 'int' p
     //A number between a % and a 'd' mean that it will print the number in length. So, %3d means that the space will always be three in length.
     printf("%3d %6d\n", length1, length2); //You can make the output of a variable have a length. In this case, it will print " 14      42"
     //There are other types of int variables. longs hold 64 bit values, short holds 16, char hold 8 bits.
-    long int big; //You can leave the int part out and it will mean the same thing; this is the same as typing "long big;"
+    long int big; //You can leave the int part out and it will mean the same thing; this is the same as typing "long big;", however, it is standard to put long int, but for time purposes, I will use long <VARIABLE>.
     big = 64;
     //Int like variables all use %d in their arguments.
     printf("long values are %ld bits.\n", big); //when referencing a long int, use %ld instead of %d
