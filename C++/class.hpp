@@ -32,7 +32,7 @@ public: //Anything under public is accessable by any object. This is called an a
     void printProtectedPrint(); //This function's soul purpose is to access a protected member of this class.
 private: //Anything private is only accessable by the class
 	int regVar; //You must create variables in a class header file
-	const int constVar;
+	const int constVar; //This is known to cause a warning with the flag -Wall, this is because it is not defined until after the creation of the class.
 	//While this is not demonstrated, you can have other classes as members.
 	//This is to represent an atribute, such as a person class having height and weight atributes as members
 	friend void friendFun(myClass &obj, int val); //A friend function is a function that belongs to a class that allows manipulation of an object and its memebers, including private ones.

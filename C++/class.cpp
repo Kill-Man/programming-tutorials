@@ -10,7 +10,7 @@ myClass::myClass(int a, int b, int var) //Constructors must have the same name a
 : regVar(a), constVar(b), oper(var) //These are member initializers. They allow you to set the values of members of a class, like variables and consts.
 {
 	cout << "This is a constructor." << endl;
-	cout << "regVar = " << regVar << ", constVar = " << constVar << endl;
+	cout << "regVar = " << regVar << ", constVar = " << constVar << ", oper = " << oper << endl;
 }
 
 void myClass::method() //This method can be used by anything, because it is public.
