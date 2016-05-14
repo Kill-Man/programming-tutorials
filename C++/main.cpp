@@ -56,6 +56,8 @@ const string name = "Kill Man"; //This is like define, but it has a datatype.
 //A const variable must be defined on declaration
 const myClass constClass(3, 14, 6);
 
+int globalVariable = 5;
+
 //Void means that there is no return type in this function.
 void printHello() //The different return types are the same as the datatypes.
 {
@@ -448,6 +450,13 @@ number: " << theirNum << "." << endl;
          * Anything between !( and ) will have their conditions flipped.
          */
         cout << "!(1 > 5)" << endl;
+
+    //Scope resolution
+    cout << "The value of globalVariable in Global Scope is " << \
+        ::globalVariable << endl;
+    int globalVariable = 10;
+    cout << "The value of globalVariable in main() scope is" << \
+        globalVariable << endl;
 
     //Arrays
     /*
