@@ -1,3 +1,8 @@
+import random #important when we talk about modules. This imports the random class
+from math import pi #from <CLASS> import <VAR> makes a variable in a class local
+from math import sqrt, cos #You can import multiple things from a single class in a single command by delimiting with commas
+from math import sqrt as square_root #when you import something as something, it will create an alias for whatever you are importing
+
 #This is a comment, anything before a # is.
 #This tutorial assumes you know the basics of C or any C-like language.
 print("Hello.") #print does exactly what it says.
@@ -140,3 +145,69 @@ for i in words: #For lets you loop with lists. This will loop as many times as t
     print(i)
 for i in range(5): #This will loop 5 times and set i to
     print('hello')
+
+def func(): #def means that you are defining a function
+    print('This is printed from a function')
+func()
+
+
+def args(arg1): #This function takes an argument, and uses it in the function.
+    print(arg1 + 1)
+args(5)
+
+def bigger(x, y): #multiple comments are delimited by comments.
+    if x > y:
+        return x #if a value is returned, the rest of the function isn't executed.
+    else:
+        return y
+print(bigger(15, 65))
+
+def docstring():
+    """
+    This is an example of a docstring.
+    It allows for you to explain the
+    function without commenting.
+    """
+    print('docstring example')
+docstring()
+
+def var_fun():
+    print('This is a function that is printed as a variable.')
+printDoc = var_fun() #You can treat functions as normal variables
+printDoc
+
+def do_twice(func): #A function can be used as an argument
+    func()
+    func()
+do_twice(func)
+
+print(random.randint(1, 6))
+print(pi)
+print(cos(65))
+print(square_root(25))
+
+try:
+	print(6 / 0)
+except ZeroDivisionError: #If an error happens in the try block, it is cought by the except block
+	print('Unable to divide by 0.')
+	
+try:
+	value = 5
+	print(value + ' = value')
+except (ValueError, TypeError): #You can have multiple exceptions using parenthasis and commas.
+	print('Error')
+	
+try:
+	print(9 / 0)
+except: #You can have an except block without any exception. This will catch all exceptions.
+	print('Error, divided by 0.')
+finally: #finally contains code that will execute no matter what.
+	print('This code will run no matter what.')
+	
+#raise ZeroDivisionError #This will cause the program to throw an error and quit. It's commented out so it doesn't stop the program all of a sudden.
+#raise ErrorName('Error Reason') #This will throw a user created error
+#You can use raise without anything after it. This should be used in an except block, as it throws the previous exception again.
+
+assert 1 + 1 == 2 #Will test the condition given, if it returns false, program ends
+#This is usually put at the beginning of a function to test if the user put the right arguments.
+#assert 1 + 4 == 6, 'Doesn't evaluate true' #assert can have multiple arguments, the second being the message if it evaluates false.
