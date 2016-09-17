@@ -1,0 +1,4 @@
+This was written to
+the file using php.
+This was appended
+to the file.

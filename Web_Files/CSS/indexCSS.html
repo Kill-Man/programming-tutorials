@@ -1,29 +1,99 @@
-<!--This is the HTML document that we will use to show examples of CSS syntax-->
-<!--In the HTML tutorial file (indexNoCSS.html), you will see that there are
-	three types of CSS, inline, which belongs to a single tag, and all decendant
-    tags, embedded, which is CSS in a document, but not belonging to any tag in
-    particular, and external, which is CSS in a separate document. Inline and
-    embedded CSS was used in indexNoCSS.html, this document will show you how
-    to use external CSS.-->
+<!-- We will use this HTML document to show examples of CSS syntax -->
+<!--
+    In the HTML tutorial file (indexNoCSS.html), you will see that there are
+    three types of CSS, inline, which belongs to a single tag, and all
+    descendant tags, embedded, which is CSS in a document, but not belonging to
+    any tag in particular, and external, which is CSS in a separate document.
+    Inline and embedded CSS was used in indexNoCSS.html, this document will show
+    you how to use external CSS.
+-->
 <!DOCTYPE HTML>
 <html>
   <head>
-	<title>CSS Tutorial</title>
-	<link rel="stylesheet" href="index.css"> <!--How we will link this document to the CSS document.-->
+        <title>CSS Tutorial</title>
+        <link rel="stylesheet" href="index.css" /> <!-- How we will link this
+                                                        document to the CSS
+                                                        document. -->
   </head>
 
   <body>
-	<p>All paragraphs will have white text and a gray background unless they are edited.</p>
-	
-	<div id="identify"> <!--You can use ids to change the style of everything in a block.-->
-	  <h1>This is part of an id.</h1>
-	  <h1>And so is this.</h1>
-	</div>
-	<p class="class">This is part of a class.</p> <!--classes work like ids, but unlike ids, the can be applied as many times as you want.-->
-	<!--NEVER start and id or class name with a number.-->
-	<div id="decendant">
-	  <p class="selectors"><em>This</em> is the only word that will be changed.</p>
-	</div>
-	<p class="mono">This is in a monospace font.</p>
+    <p>All paragraphs will have white text and a gray background unless they
+      are edited.</p><br />
+        
+    <div id="identify"> <!-- You can use ids to change the style of
+                             everything in a block. -->
+      <h1>This is part of an id.</h1>
+      <h1>And so is this.</h1>
+    </div>
+    <p class="class">This is part of a class (And hard to read).</p>
+    <!--
+        classes work like ids but unlike ids, the can be applied as many times
+        as you want.
+    -->
+    <br />
+    <!-- NEVER start and id or class name with a number. -->
+    <div id="descendant">
+      <p class="selectors"><em>This</em> is the only word that will be
+        changed.</p><br />
+    </div>
+    <p>The word <span style="color: red;">red</span> is <span style="color:
+      red;">red</span> because of the span tag.</p>
+    <!--
+      The <span> tag allows you to change the style of a single section of text.
+      Think of it like a style within a style.
+    -->
+    
+    <p class="mono">This is in a monospace font.</p>
+    <br />
+    <p class="small">This text is small.</p>
+    <p class="medium">This text is medium.</p>
+    <p class="large">This text is large.</p>
+    <p class="xlarge">This text is XL.</p>
+    <p class="percent">This text is 130% bigger.</p>
+    <p class="pxls">This text's size was changed in pixels.</p>
+    <p class="em">This text was measured in ems.</p>
+    <br />
+    <p class="ital">This text is italic.</p>
+    <p class="obl">This text is oblique.</p>
+    <p class="norm">This text is normal.</p>
+    <br />
+    <p class="centered">This text is centered</p>
+    <p class="left">This text is left aligned</p>
+    <p class="right">This text is right aligned</p>
+    <p class="just">This text is justified This text is justified This text is
+      justified This text is justified This text is justified This text is
+      justified This text is justified This text is justified This text is
+      justified This text is justified This text is justified This text is
+      justified This text is justified This text is justified This text is
+      justified This text is justified This text is justified This text is
+      justified This text is justified This text is justified This text is
+      justified This text is justified This text is justified This text is
+      justified This text is justified This text is justified This text is
+      justified This text is justified This text is justified This text is
+      justified This text is justified This text is justified This text is
+      justified This text is justified This text is justified This text is
+      justified This text is justified This text is justified This text is
+      justified This text is justified This text is justified This text is</p>
+    <p class="overline">This text is overlined.</p>
+    <p class="strikethrough">This text is striked through.</p>
+    <p class="underline">This text is underlined.</p>
+    <p><a href="http://www.google.com" class="none">This text is a link, but not
+      underlined.</a></p>
+
+    <table>
+      <thead>
+        <th colspan=2>Table</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>MEME</td>
+          <td>IT</td>
+        </tr>
+        <tr>
+          <td>UP</td>
+          <td>FAM</td>
+        </tr>
+      </tbody>
+    </table>
   </body>
 </html>

@@ -1,25 +1,159 @@
+/* BBBBBB          A          SSSSS    IIIIIIII     CCCCCC    SSSSS
+   B     B        A A        S            II       C         S
+   B     B       A   A       S            II      C          S
+   BBBBBB       AAAAAAA       SSSSS       II      C           SSSSS
+   B     B     A       A           S      II      C                S
+   B     B    A         A          S      II       C               S
+   BBBBBB    A           A    SSSSS    IIIIIIII     CCCCCC    SSSSS  */
 /* CSS is used to change the look and feel of a web page. */
-/* Making comments in CSS is the same as multiline comments in C like languages. Comments are always multiline. */
-/* Style elements are called style rules, which are read by the web browser. Style rules have three parts: selector, property, and value. */
-p { /* This is the selector. It tells the browser what to change, in this case, anything with a <p> (paragraph) tag. Anything in between the {} affects the selector. */
-	color:white; /* color is the property, it is what is changed, and white is the property value. color changes the text color of whatever is selected. This is called a declaration block. */
-	background-color:gray; /* backgroud-color changes the background color of the text, not the text itself and not the background of the webpage. */
-	font-size:130%; /* font-size changes the size of the font, in this case, by percent, making it 130% the size of the default. */
-} /* Notice that all declaration blocks are sepparated by semicolons, and the property and value is separated by a colon. */
+/* Making comments in CSS is the same as multiline comments in C like languages.
+   Comments are always multiline. */
+/* Style elements are called style rules, which are read by the web browser.
+   Style rules have three parts: selector, property, and value. */
+p { /* This is the selector. It tells the browser what to change, in this case,
+       anything with a <p> (paragraph) tag. Anything in between the {} affects
+       the selector. */
+    color: white; /* color is the property, it is what is changed, and white is
+                     the property value. color changes the text color of
+                     whatever is selected. This is called a declaration
+                     block. */
+    background-color: gray; /* backgroud-color changes the background color of
+                               the text, not the text itself and not the
+                               background of the webpage. */
+} /* Notice that all declaration blocks are sepparated by semicolons, and the
+     property and value is separated by a colon. */
 
-/* The rule of inheritance says that if a child tag is edited, it takes precident over a parent tag being edited, so if a <p> is used in an id, the p styles overrule the id styling. */
-#identify { /* You can reference to ids by putting an octothorpe (#) in front of the name of the id. Everything in that block will be changed accordingly. */
-	color:#0000FF; /* You can use hex instead of color names when using colors. */
-	font-size:80%;
+
+/* The rule of inheritance says that if a child tag is edited, it takes precident
+   over a parent tag being edited, so if a <p> is used in an id, the p styles
+   overrule the id styling. */
+#identify { /* You can reference to ids by putting an octothorpe (#) in front of
+               the name of the id. Everything in that block will be changed
+               accordingly. */
+    color: #0000FF; /* You can use hex instead of color names when using
+                       colors. */
+    font-size: 80%;
 }
 .class { /* To select a class, put a period (.) in front of the class name. */
-	color:blue;
-	background-color:black;
+    color: blue;
+    background-color: black;
 }
-#decendant .selectors em { /* This will look for the <em> tag in the selectors class in the decendant id and style accordingly. */
-	color:yellow;
-	background-color:black;
+
+
+#descendant .selectors em { /* This will look for the <em> tag in the selectors
+                               class in the decendant id and style
+                               accordingly. */
+    color: yellow;
+    background-color: black;
 }
+
+
 .mono {
-	font-family:Monospace; /* font-family changes the font family. */
+    font-family: "Courier New", Courier, monospace; /* font-family changes the */
+    /* font family. The prefered family is the first family. If a font family's */
+    /* name is more than one word, put it in quotes. If the first isn't */
+    /* available, it will go to the next, until it gets to the last one. */
 }
+
+
+/* font-size, of course, changes the font size. */
+.small {
+    font-size: small; /* Will make the text small. */
+}
+.medium {
+    font-size: medium; /* Will make the text medium size. */
+}
+.large {
+    font-size: large; /* Etc. */
+}
+.xlarge {
+    font-size: x-large;
+}
+.percent {
+    font-size: 130%; /* You can use percentages as measurements. */
+}
+.pxls {
+    font-size: 15px; /* You can use pixels as measurement. */
+}
+.em {
+    font-size: 1.12em; /* You can also use em. */
+}
+
+.ital {
+    font-style: italic;
+}
+.obl {
+    font-style: oblique;
+}
+.norm {
+    font-style: normal;
+}
+
+.centered {
+    text-align: center;
+}
+.left {
+    text-align: left;
+}
+.right {
+    text-align: right;
+}
+.just {
+    text-align: justify;
+}
+
+.overline {
+    text-decoration: overline;
+}
+.strikethrough {
+    text-decoration: line-through;
+}
+.underline {
+    text-decoration: underline;
+}
+.none {
+    text-decoration: none;
+}
+
+
+
+/* BBBBBB      OOOO     RRRR    DDDDD     EEEEEEE   RRRR     SSSSS
+   B     B    O    O    R   R   D    D    E         R   R   S
+   B     B   O      O   R   R   D     D   E         R   R   S
+   BBBBBB    O      O   RRRR    D     D   EEEE      RRRR     SSSSS
+   B     B   O      O   R R     D     D   E         R R           S
+   B     B    O    O    R  R    D    D    E         R  R          S
+   BBBBBB      OOOO     R   R   DDDDD     EEEEEEE   R   R    SSSSS  */
+table {
+    border-width: 20px; /* border-width defines how large the border around the
+                           text in the element. */
+    border-style: solid; /* border-style defines what type of border the border
+                            will be. All possible choices are:
+                                solid
+                                dashed
+                                dotted
+                                double
+                                groove
+                                ridge
+                                inset
+                                outset
+                                none
+                                hidden */
+    border-color: green; /* border-color changes the color of a border. */
+}
+td {
+    height: 50px;
+    width: 50px;
+    color: #420;
+    font-family: Impact, "Comic Sans MS", sans-serif, serif;
+    font-size: 20px;
+    text-align: center;
+    border-width: 3px;
+    border-style: dashed;
+    border-color: red;
+}
+/* With borders, you can change the individual sides of a border by just putting
+   a side between the border- and what you are changing, so if you, say, wanted
+   to change the color of the left side of the border, you would just use:
+       border-left-color: red;
+   This is the same for all other border atributes. */
